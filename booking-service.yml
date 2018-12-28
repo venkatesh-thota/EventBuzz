@@ -1,0 +1,13 @@
+version: '2'
+services:
+  booking-service:
+    image: booking-service
+    build: booking-service/
+    container_name: booking
+    network_mode: host
+    ports:
+      - 10000:10000
+    expose:
+      - 10000
+    restart: always
+

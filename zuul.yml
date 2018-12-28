@@ -1,0 +1,12 @@
+version: '2'
+services:
+  zuul:
+    image: zuul
+    build: ZuulService/
+    container_name: zuul-service
+    network_mode: host
+    ports:
+      - 8001:8001
+    expose:
+      - 8001
+

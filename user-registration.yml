@@ -1,0 +1,11 @@
+version: '2'
+services:
+  user-registration:
+    image: user-registration
+    build: user-registration-service/
+    container_name: user-registration
+    network_mode: host
+    ports:
+      - 8083:8083
+    expose:
+      - 8083

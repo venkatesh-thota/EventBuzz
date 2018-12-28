@@ -1,0 +1,11 @@
+version: '2'
+services:
+  
+  mongodb: 
+
+    image: mongo:3.2-jessie
+    ports:
+      - "27017:27017"
+    network_mode: host
+    volumes:
+      - /my/own/datadir:/data/db

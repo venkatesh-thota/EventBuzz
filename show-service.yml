@@ -1,0 +1,13 @@
+version: '2'
+services:
+  show-service:
+    image: show-service:1.0
+    build: show-service/
+    container_name: show-service
+    network_mode: host
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+    restart: always
+

@@ -1,0 +1,12 @@
+version: '2'
+services:
+  scheduler:
+    image: scheduler
+    build: scheduler-service/
+    container_name: scheduler
+    network_mode: host
+    ports:
+      - 8090:8090
+    expose:
+      - 8090
+

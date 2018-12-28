@@ -1,0 +1,12 @@
+version: '2'
+services:
+  email-service:
+    image: email-service
+    build: email-service/
+    container_name: mail
+    network_mode: host
+    ports:
+      - 8095:8095
+    expose:
+      - 8095
+

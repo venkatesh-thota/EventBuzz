@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+  eureka:
+
+    image: eureka:1.0
+    build: eureka-registry/
+    container_name: elegant_wils
+    network_mode: host
+    ports:
+      - 8091:8091
+    expose:
+      - 8091

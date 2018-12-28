@@ -1,0 +1,11 @@
+version: '2'
+services:
+  producer-registration:
+    image: producer-registration
+    build: producer-registration-service/
+    container_name: producer-registration
+    network_mode: host
+    ports:
+      - 8085:8080
+    expose:
+      - 8085

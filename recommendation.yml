@@ -1,0 +1,11 @@
+version: '2'
+services:
+  recommendation:
+    image: recommendation
+    build: recommendation-service/
+    container_name: recommendation
+    network_mode: host
+    ports:
+      - 8099:8099
+    expose:
+      - 8099

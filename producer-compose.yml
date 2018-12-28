@@ -1,0 +1,14 @@
+version : '2'
+services:
+ producer:
+   image: docker-spring
+   build: producer-registration-service/
+   restart: always
+   network_mode: host
+   container_name: producer_serviceapp
+   depends_on: 
+     - mongodb
+   ports:
+     - 8080:8080
+   expose:
+     - 8080

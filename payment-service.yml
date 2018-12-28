@@ -1,0 +1,12 @@
+version: '2'
+services:
+  payment:
+    image: payment
+    build: payment-sesrvice/
+    container_name: payment
+    network_mode: host
+    ports:
+      - 8188:8188
+    expose:
+      - 8188
+

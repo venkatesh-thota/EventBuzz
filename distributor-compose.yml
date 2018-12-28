@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+  distributor:
+
+    image: distributor:1.0
+    build: distributor-service/
+    network_mode: host
+    container_name: "distributor"
+    ports:
+      - 8082:8080
+    expose:
+      - 8082

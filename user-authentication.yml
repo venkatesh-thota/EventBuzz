@@ -1,0 +1,11 @@
+version: '2'
+services:
+  user-authentication:
+    image: user-authentication
+    build: user-authentication-service/
+    container_name: user-registration-container
+    network_mode: host
+    ports:
+      - 8050:8050
+    expose:
+      - 8050
