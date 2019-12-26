@@ -1,0 +1,18 @@
+#spring:
+#  application:
+#    name: eureka
+#  cloud:
+#    config:
+#      uri: ${CONFIG_SERVER_URL:http://localhost:8092}
+#management:
+#  security:
+#    enabled: false
+#spring:
+#  application:
+#    name: config-server-client
+#  cloud:
+#    config:
+#      uri: http://localhost:8092
+#  profiles:
+#    active: registry
+
