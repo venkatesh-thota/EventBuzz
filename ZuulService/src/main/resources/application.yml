@@ -1,0 +1,32 @@
+zuul:
+  routes:
+    user-registration-service:
+      url: http://localhost:8083
+    user-authentication-service:
+      url: http://localhost:8050
+    show-service:
+      url: http://localhost:8080
+    producer-service:
+      url: http://localhost:8085
+    distributor-service:
+      url: http://localhost:8082
+    email-Service:
+      url: http://localhost:8095
+    recommendation-service:
+      url: http://localhost:8099
+    rsvp-service:
+      url: http://localhost:8005
+    booking-service:
+      url: http://localhost:10000
+    schedular-service:
+      url: http://localhost:8090
+    payment-service:
+      url: http://localhost:8188
+    search-service: 
+      url: http://localhost:8081
+host:
+    socket-timeout-millis: 6000000
+ws:
+  end-points: /booking
+  brokers:  /topic
+  destination-prefixes: /app
