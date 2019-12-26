@@ -1,0 +1,14 @@
+spring:
+    mail:
+        host: smtp.gmail.com
+        password: 0987poiu
+        port: 587
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+        username: eventbuzz.stackroute@gmail.com
+server:
+  port: 8095

@@ -1,0 +1,20 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/distributor
+      database: distributor
+      host: localhost
+      port: 27017
+distributor-service:
+  controller:
+    distributor:
+      notFound: "Distributor Not Found Exception"
+      alreadyExists: "Distributor Already Exists Exception"
+    city:
+      notFound: "City Not Found Exception"
+      alreadyExists: "City Already Exists Exception"
+    movie:
+      notFound: "Movie Not Found Exception"
+      alreadyExists: "Movie Already Exists Exception"
+
+
