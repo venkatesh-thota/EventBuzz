@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/ProducerDB
+      database: ProducerDB
+      host: localhost
+      port: 27017

@@ -1,0 +1,20 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/rsvpEventProducer
+      database: rsvpEventProducer
+      host: localhost
+      port: 27017
+rsvp-service:
+  controller:
+    producer:
+      notFound: "Producer Not Found Exception"
+      alreadyExists: "Producer Already Exists Exception"
+    event:
+      notFound: "Event Not Found Exception"
+      alreadyExists: "Event Already Exists Exception"
+    invitation:
+      notFound: "Invitation Not Found Exception"
+      alreadyExists: "Invitation Already Exists Exception"
+
+
