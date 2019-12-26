@@ -1,0 +1,23 @@
+management:
+    security:
+        enabled: false
+server:
+    port: 8092
+eureka:         #tells about the Eureka server details and its refresh time
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8091/eureka/
+        healthcheck:
+            enabled: true
+        lease:
+            duration: 5
+spring:
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/ShreelekhyaG/config-server-repo.git
+                        #/home/cgi/config-server-repo
+                    #https://github.com/ShreelekhyaG/config-server-repo.git
+    application:
+      name: config-server
